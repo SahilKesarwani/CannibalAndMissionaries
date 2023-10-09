@@ -34,7 +34,7 @@ p {
 	width: 200px;
 	height: 400px;
 	background-color: lightgreen;
-	background-image: url('grass.jpg');
+	background-image: url("./grass.jpg");
 	background-size: cover;
 	display: flex;
 	justify-content: center;
@@ -47,7 +47,7 @@ p {
 	width: 400px;
 	height: 100px;
 	background-color: lightblue;
-	background-image: url('water.jpeg');
+	background-image: url("./water.jpeg");
 	background-size: cover;
 	display: flex;
 	align-items: center;
@@ -57,13 +57,13 @@ p {
 	width: 200px;
 	height: 100px;
 	background: transparent;
-	background-image: url('boat-removebg-preview.png');
+	background-image: url("./boat-removebg-preview.png");
 	background-size: cover;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
 	cursor: pointer;
-	
+
 	transition: 1s all linear;
 }
 
@@ -80,23 +80,21 @@ p {
 }
 
 .missionary {
-	background-image: url('devil.png');
+	background-image: url("./devil.png");
 	background-size: cover;
-	
 }
 
 .cannibal {
 	background-color: yellow;
-	background-image: url('angel.png');
-	
+	background-image: url("./angel.png");
+
 	background-size: cover;
 }
 
 .disable {
 	cursor: unset;
 }
-.reset-btn
-{
+.reset-btn {
 	text-transform: uppercase;
 	background-color: rgb(29, 29, 239);
 	padding: 10px;
