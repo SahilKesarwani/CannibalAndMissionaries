@@ -12,7 +12,17 @@
 	justify-content: center;
 	flex-direction: column;
 }
+h1 {
+	padding: 20px;
+	font-size: 3em;
+}
 
+p {
+	padding: 20px;
+	font-size: 1.5em;
+	margin-bottom: 10px;
+	text-align: center;
+}
 .game {
 	display: flex;
 	align-items: center;
@@ -24,6 +34,8 @@
 	width: 200px;
 	height: 400px;
 	background-color: lightgreen;
+	background-image: url('grass.jpg');
+	background-size: cover;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -35,41 +47,63 @@
 	width: 400px;
 	height: 100px;
 	background-color: lightblue;
+	background-image: url('water.jpeg');
+	background-size: cover;
 	display: flex;
 	align-items: center;
 }
 
 .boat {
-	width: 100px;
-	height: 50px;
-	background-color: green;
+	width: 200px;
+	height: 100px;
+	background: transparent;
+	background-image: url('boat-removebg-preview.png');
+	background-size: cover;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
 	cursor: pointer;
-	transition: 500ms all linear;
+	
+	transition: 1s all linear;
 }
 
 .move-right {
-	transform: translateX(300px);
+	transform: translateX(200px);
 }
 
 .missionary,
 .cannibal {
-	width: 20px;
-	height: 20px;
+	width: 30px;
+	height: 30px;
 	border-radius: 50%;
 	cursor: pointer;
 }
 
 .missionary {
-	background-color: red;
+	background-image: url('devil.png');
+	background-size: cover;
+	
 }
 
 .cannibal {
 	background-color: yellow;
+	background-image: url('angel.png');
+	
+	background-size: cover;
 }
 
 .disable {
 	cursor: unset;
+}
+.reset-btn
+{
+	text-transform: uppercase;
+	background-color: rgb(29, 29, 239);
+	padding: 10px;
+	width: 10em;
+	cursor: pointer;
+	color: white;
+	font-weight: 500;
+	border-radius: 20px;
+	border: none;
 }
