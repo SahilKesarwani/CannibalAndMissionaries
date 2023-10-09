@@ -1,0 +1,75 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.game {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.left-container,
+.right-container {
+	width: 200px;
+	height: 400px;
+	background-color: lightgreen;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.river {
+	width: 400px;
+	height: 100px;
+	background-color: lightblue;
+	display: flex;
+	align-items: center;
+}
+
+.boat {
+	width: 100px;
+	height: 50px;
+	background-color: green;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	cursor: pointer;
+	transition: 500ms all linear;
+}
+
+.move-right {
+	transform: translateX(300px);
+}
+
+.missionary,
+.cannibal {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.missionary {
+	background-color: red;
+}
+
+.cannibal {
+	background-color: yellow;
+}
+
+.disable {
+	cursor: unset;
+}
